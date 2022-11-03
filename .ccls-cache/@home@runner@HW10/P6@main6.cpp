@@ -12,7 +12,7 @@ struct CarStructure {
 
 int main() {
   // part B
-  double MPG = 0, AMPG; // miles per gallon and average mpg
+  double MPG = 0, TMPG = 0, AMPG = 0; // miles per gallon and average mpg
   CarStructure car[5];
 
   for (int i = 0; i < 5; i++) {
@@ -24,12 +24,14 @@ int main() {
     cin >> car[i].GallonsUsed;
   }
 
-  cout << setw(15) << "Car Number"
-       << "MPG \n";
+  cout << setw(10) << "Car Number" << setw(10) << "MPG \n";
   cout << "******************************\n";
 
-  for (int j = 0; j < 5; j++)
-    {
-      MPG = += 
-    }
+  for (int j = 0; j < 5; j++) {
+    TMPG = TMPG + ((car[j].MilesDriven) / car[j].GallonsUsed);
+    MPG = car[j].MilesDriven / car[j].GallonsUsed;
+
+    cout << setw(6) << car[j].CarNumber << setprecision(2) << setw(15) << MPG
+         << endl;
+  }
 }

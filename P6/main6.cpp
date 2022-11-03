@@ -24,8 +24,8 @@ int main() {
     cin >> car[i].GallonsUsed;
   }
 
-  cout << setw(10) << "Car Number" << setw(10) << "MPG \n";
-  cout << "____________________\n";
+  cout << setw(10) << "Car Number" << setw(15) << "MPG \n";
+  cout << "_____________________________\n";
 
   for (int j = 0; j < 5; j++) {
     TMPG = TMPG + ((car[j].MilesDriven) / car[j].GallonsUsed);
@@ -34,7 +34,7 @@ int main() {
     cout << setw(6) << car[j].CarNumber << setprecision(2) << setw(15) << MPG
          << endl;
   }
-  AMPG = MPG / 5;
-  cout << setw(20) << "__________\n";
-  cout << setw(20) << AMPG << endl;
+  AMPG = TMPG / 5;
+  cout << setw(24) << "__________\n";
+  cout << setw(22) << AMPG << endl;
 }

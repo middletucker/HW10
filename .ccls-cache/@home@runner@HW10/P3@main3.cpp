@@ -10,8 +10,7 @@ int main() {
 
   int arrA[N];
 
-  for (int i = 0; i < N; i++)
-    {
-      cin >> arrA[i];
-    }
+  for (int i = 0; i < N; i++) {
+    cin >> arrA[i];
+  }
 }
